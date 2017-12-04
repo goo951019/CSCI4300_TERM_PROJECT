@@ -19,7 +19,7 @@
     function initMap() {
         var campus_center = {lat: 33.9463864, lng: -83.3759057};
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
+            zoom: 15,
             center: campus_center
         });
 
@@ -44,6 +44,114 @@
         science_library_marker.addListener("click", function(){
             science_library_infowindow.open(map, science_library_marker);
         });
+        
+        //MLC
+        var mlc_content = '<div id="mlccontent">'+
+        		'<div id="mlcsiteNotice">'+
+        		'</div>'+
+       		 '<h1 id="firstHeading" class="firstHeading">Miller Learning Center</h1>'+
+       		 '<div id="bodyContent">'+
+       		 '<p>The Miller Learning Center is open 24 hours a day and has 96 group study rooms. Insert pictures.</p>'+
+       		 '</div>'+
+       		 '</div>';
+    		var mlc = {lat: 33.9517, lng: -83.3761};
+    		var mlc_infowindow = new google.maps.InfoWindow({
+     		   content: mlc_content
+   		 });
+    		var mlc_marker = new google.maps.Marker({
+    		    position: mlc,
+    		    map: map,
+     		   title: "Miller Learning Center"
+   		 });
+    		mlc_marker.addListener("click", function(){
+    		    mlc_infowindow.open(map, mlc_marker);
+   		 });
+    		
+    		//SLC
+    		var slc_content = '<div id="slccontent">'+
+    			'<div id="slcsiteNotice">'+
+    			'</div>'+
+   			 '<h1 id="firstHeading" class="firstHeading">Science Learning Center</h1>'+
+   			 '<div id="bodyContent">'+
+   			 '<p>The new Science Learning Center includes study rooms and a Caribou Coffee shop. Insert pictures.</p>'+
+   			 '</div>'+
+   			 '</div>';
+		var slc = {lat: 33.9426, lng: -83.3764};
+		var slc_infowindow = new google.maps.InfoWindow({
+ 		   content: slc_content
+		 });
+		var slc_marker = new google.maps.Marker({
+		    position: slc,
+		    map: map,
+ 		   title: "Science Learning Center"
+		 });
+		slc_marker.addListener("click", function(){
+		    slc_infowindow.open(map, slc_marker);
+		 });
+		
+		//library
+		var main_library_content = '<div id="main_librarycontent">'+
+			'<div id="main_librarysiteNotice">'+
+			'</div>'+
+			 '<h1 id="firstHeading" class="firstHeading">Main Library</h1>'+
+			 '<div id="bodyContent">'+
+			 '<p>The Main Library is a quiet study spot that includes a coffee shop. Check out the fourth floor '+
+			 'for a colloborative study space. Insert pictures.</p>'+
+			 '</div>'+
+			 '</div>';
+		var main_library = {lat: 33.9541, lng: -83.3738};
+		var main_library_infowindow = new google.maps.InfoWindow({
+		   content: main_library_content
+		 });
+		var main_library_marker = new google.maps.Marker({
+		    position: main_library,
+		    map: map,
+			   title: "Main Library"
+		 });
+		main_library_marker.addListener("click", function(){
+			main_library_infowindow.open(map, main_library_marker);
+		 });
+		
+		
+		//tate
+		var tate_content = '<div id="tatecontent">'+
+			'<div id="tatesiteNotice">'+
+			'</div>'+
+			 '<h1 id="firstHeading" class="firstHeading">Tate Student Center</h1>'+
+			 '<div id="bodyContent">'+
+			 '<p>Tate Student Center includes a food court and a Starbucks cafe. There are tables and sofas '+
+			 'scattered all over the building. A less popular spot for studying, but space is always avaliable. Insert pictures.</p>'+
+			 '</div>'+
+			 '</div>';
+		var tate = {lat: 33.9505, lng: -83.3751};
+		var tate_infowindow = new google.maps.InfoWindow({
+		   content: tate_content
+		 });
+		var tate_marker = new google.maps.Marker({
+		    position: tate,
+		    map: map,
+			   title: "Tate Student Center"
+		 });
+		tate_marker.addListener("click", function(){
+			tate_infowindow.open(map, tate_marker);
+		 });		
+		
+		
+		//two story coffee
+		
+		//downstairs, snelling
+		
+		//starbucks downtown, upstairs
+		
+		//north campus quad
+		
+		//walkers
+		
+		//museum of art
+		
+		//foundersmemorialgarden
+	
+		
 
     }
 </script>
