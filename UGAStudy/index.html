@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-5">
+<title>UGA Study Spots</title>
 <head>
     <style>
         #map {
             height: 100%;
+			margin-left: .5cm;
+			margin-right: .5cm;
         }
-
         html, body{
             height: 100%;
             margin: 0;
             padding: 0;
         }
+		h1{
+			font-family: 'Raleway',sans-serif;\
+		}
     </style>
 </head>
 <body>
+<h1 align="center">UGA Study Spots</h1>
 <div id="map"></div>
 <script>
     function initMap() {
@@ -23,7 +30,6 @@
             zoom: 14,
             center: new_center
         });
-
         //SCIENCE LIBRARY
         var science_library_content = '<div id="content">'+
             '<div id="siteNotice">'+
@@ -31,6 +37,8 @@
             '<h1 id="firstHeading" class="firstHeading">Science Library</h1>'+
             '<div id="bodyContent">'+
             '<p>The Science Library is a great place to study it is open from X to Y. Insert pictures.</p>'+
+			'<p><img src="http://www.allstateelec.com/wp-content/uploads/2015/01/130104_7_R1-1024x791.jpg" alt="Science Library" width="200" height="200">' +
+			'<img style="padding-left:.1cm" src="https://www.libs.uga.edu/sites/default/files/styles/landscape_mediumlarge_400x300_/public/2016-07/science_library_0.png?itok=NZYWrjnp" alt="Science Library" width="200" height="200"></p>'+
             '</div>'+
             '</div>';
         var science_library = {lat: 33.946199, lng: -83.375447};
@@ -284,7 +292,6 @@
 			founders_garden_infowindow.open(map, founders_garden_marker);
 		 });
 		
-
     }
 </script>
 <script async defer
