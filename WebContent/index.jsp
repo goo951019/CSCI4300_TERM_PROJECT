@@ -3,20 +3,38 @@
 <title>UGA Study Spots</title>
 <head>
     <style>
-        #map{
-            height: 100%;
+        #map {
+            height: 82%;
 			margin-left: .5cm;
 			margin-right: .5cm;
+			
         }
         html, body{
-            height: 100%;
-            margin: 0;
-            padding: 0;
+            position:fixed;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			background-color:#66a3ff;
         }
 		h1{
-			font-family: 'Raleway',sans-serif;
+			font-family: 'Raleway',sans-serif;\
 		}
-    </style>
+		button.tabs{
+			width: 4cm;
+			padding:0 5px;
+		}
+		div.expand{
+			display: none;
+			background-color: white;
+			width: 450px;
+			height: 125px;
+			margin: 0;
+			overflow: auto;
+		}
+		br{
+			height: 0px;
+		}
 </head>
 <jsp:useBean id="contentBean" class="mariaDB.SelectData" scope="session" >
 <jsp:setProperty name="contentBean" property="*" />
