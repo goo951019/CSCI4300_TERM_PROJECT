@@ -1,6 +1,6 @@
 # CSCI4300_TERM_PROJECT
 
-Team members: 
+Team members:  
 Merima Makelja 811632169  
 Sanggyun Jang 811554128  
 Sundeep Ravikumar 811000264  
