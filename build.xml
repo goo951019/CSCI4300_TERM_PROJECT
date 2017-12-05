@@ -1,0 +1,14 @@
+<project name="studyMap" default="run_query">
+	<target name="compile_src">
+		<javac includeantruntime="false" srcdir="src" destdir="classes"/>
+	</target>
+		
+	<target name="run_query" depends="compile_src">
+		<java classname="mariaDB.SelectData">
+			<classpath>
+				<pathelement path="classes"/>
+				<pathelement path="/home/student/csci4300/studyMap/mariadb-java-client-2.2.0.jar"/>
+			</classpath>
+		</java>
+	</target>
+</project>
