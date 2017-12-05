@@ -1,10 +1,10 @@
 # CSCI4300_TERM_PROJECT
 
 Team members: 
-Merima Makelja 811632169
-Sanggyun Jang 811554128
-Sundeep Ravikumar 811000264
-Joshua Anickat 811148237
+Merima Makelja 811632169, 
+ Sanggyun Jang 811554128,
+ Sundeep Ravikumar 811000264,
+ Joshua Anickat 811148237.
 
 Project Definition: We are going to make a website that includes an interactive map of the UGA campus that shows popular, interesting, and “hidden” study spots. 
 
