@@ -102,6 +102,7 @@
 	</div>
 	<br>
 <script>
+//some code in the javascript below was influenced by w3schools
 var tabsList = document.getElementsByClassName("tabs");
 	for (i = 0; i < tabsList.length; i++) {
 		tabsList[i].onclick = function(){
