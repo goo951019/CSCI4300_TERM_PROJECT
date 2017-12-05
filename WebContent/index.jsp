@@ -32,15 +32,89 @@
 			margin: 0;
 			overflow: auto;
 		}
-		br{
-			height: 0px;
-		}
 </head>
 <jsp:useBean id="contentBean" class="mariaDB.SelectData" scope="session" >
 <jsp:setProperty name="contentBean" property="*" />
 </jsp:useBean>
 <body>
 <h1 align="center">UGA Study Spots</h1>
+<div align="center">
+		<button class="tabs">Addresses</button>
+		<div class="expand">
+		  <b>Science Library</b>
+		  <p>Address: 210 D. W. Brooks Drive, Athens, GA 30602</p>
+		  <p>MON-THURS: 7:30am-2:00AM</p>
+		  <p>SAT: 10:00am-7:00pm</p>
+		  <p>SUN: 1:00pm-2:00am</p>
+		  <b>Miller Learning Center</b>
+		  <p>Address: 48 Baxter St, Athens, GA 30602</p>
+		  <p>Open 24 hours, 7 days a week</p>
+		  <b>Science Learning Center</b>
+		  <p>Address: 130 Carlton Street Athens, GA 30602</p>
+		  <p>MON-FRI: 7:30am-9:00PM</p>
+		  <p>SAT-SUN: Closed</p>
+		  <b>Main Library</b>
+		  <p>Address: 320 S Jackson St, Athens, GA 30602</p>
+		  <p>MON-THURS: 7:30am-2:00AM</p>
+		  <p>SAT: 10:00am-7:00pm</p>
+		  <p>SUN: 1:00pm-2:00am</p>
+		  <b>Tate Student Center</b>
+		  <p>Address: 45 Baxter St, Athens, GA 30602</p>
+		  <p>SUN-SAT: 8:00am-12:00AM</p>
+		  <b>Two Story Coffeehouse</b>
+		  <p>Address: 680 S Lumpkin St, Athens, GA 30606</p>
+		  <p>MON-FRI: 8:00am-10:00pm</p>
+		  <p>SAT-SUN: Closed</p>
+		  <b>Snelling (Downstairs)</b>
+		  <p>Address: 210 D. W. Brooks Drive, Athens, GA 30602</p>
+		  <p>MON-THURS: Open 24 hours</p>
+		  <p>FRI: Closes at 2:30pm</p>
+		  <p>SAT-SUN: Closed</p>
+		  <b>Starbucks (Downtown)</b>
+		  <p>Address: 100 College Ave, Athens, GA 30601</p>
+		  <p>MON-FRI: 6:00am-11:00pm</p>
+		  <p>SAT: 6:00am-12:00pm</p>
+		  <p>SUN: 6:00am-10:00pm</p>
+		  <b>Walkers</b>
+		  <p>Address: 128 College Ave, Athens, GA 30601</p>
+		  <p>MON-THURS: 7:00am-2:00am</p>
+		  <p>SAT: 8:30am-2:00am</p>
+		  <p>SUN: 11:00am-12:00am</p>
+		  <b>Museum of Art</b>
+		  <p>Address: 90 Carlton St, Athens, GA 30602</p>
+		  <p>MON: Closed</p>
+		  <p>TUES-THURS: 10:00am-9:00pm</p>
+		  <p>SAT-SUN: 1:00pm-5:00pm</p>
+		  <b>Founders Memorial Garden</b>
+		  <p>Address: Founders Garden Athens, GA 30601</p>
+		  <p>Open at all times.</p>
+		  <p></p>
+		  <br>
+		</div>
+	</div>
+	<div align="center">
+		<button class="tabs">Help</button>
+		<div class="expand">
+		  <p>To use the website, click on any of the markers on the map. When clicked, a pop-up will expand and display the name, pictures,and a description of the location.
+		  To see the address, click the address button above the help button and search up the address by the name of the location you desire.
+		  </p>
+		</div>	
+	</div>
+	<br>
+<script>
+var tabsList = document.getElementsByClassName("tabs");
+	for (i = 0; i < tabsList.length; i++) {
+		tabsList[i].onclick = function(){
+			this.classList.toggle("active");
+			var  expand = this.nextElementSibling;
+			if ( expand.style.display === "block") {
+				 expand.style.display = "none";
+			} else {
+				 expand.style.display = "block";
+			}
+		}
+	}
+</script>
 <div id="map"></div>
 <script>
     function initMap() {
