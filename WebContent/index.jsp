@@ -4,7 +4,9 @@
 <head>
     <style>
         #map {
-            height: 100%;	
+            height: 100%;
+	    scrollwheel: false;
+	    zoomControl: true;
         }
         html, body{
               height: 100%;
@@ -92,7 +94,8 @@
 		<button class="tabs">Help</button>
 		<div class="expand">
 		  <p>To use the website, click on any of the markers on the map. When clicked, a pop-up will expand and display the name, pictures,and a description of the location.
-		  To see the address, click the address button above the help button and search up the address by the name of the location you desire.
+		  To see the address, click the address button above the help button and search up the address by the name of the location you desire. If you want to zoom in on the map,
+		  please use the zoom controls that are on the map itself.
 		  </p>
 		</div>	
 	</div>
@@ -126,7 +129,9 @@
         var new_center= {lat: 33.9505, lng: -83.3751};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
-            center: new_center
+            center: new_center,
+	    scrollwheel: false,
+	    zoomControl: true
         });
         
         var prefetch = '<%=contentBean.getContentString("Science Library")%>';
