@@ -26,19 +26,19 @@ VM serving webpage: vm355
 Source code on VM: /home/student/csci4300/studyMap
 
 Acknowledgements for images:
-redandblack.com
-flickr.com
-columns.uga.edu
-coopercary.com
-imgur.com
-robertfrostmuse.wordpress.com
-images.morris.com
-yelp.com
-allstateelec.com
-architects.uga.edu
-ced.uga.edu
-libs.uga.edu
-walkerscoffee.com
+redandblack.com,
+ flickr.com,
+ columns.uga.edu,
+ coopercary.com,
+ imgur.com,
+ robertfrostmuse.wordpress.com,
+ images.morris.com,
+ yelp.com,
+ allstateelec.com,
+ architects.uga.edu,
+ ced.uga.edu,
+ libs.uga.edu,
+ walkerscoffee.com
 
 All these sources for the images were found using google images.
 
