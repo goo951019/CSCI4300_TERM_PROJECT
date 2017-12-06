@@ -26,7 +26,6 @@ VM serving webpage: vm355
 Source code on VM: /home/student/csci4300/studyMap
 
 Acknowledgements for images:
-Images were used from ->
 redandblack.com
 flickr.com
 columns.uga.edu
