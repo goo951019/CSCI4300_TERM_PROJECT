@@ -102,10 +102,8 @@
 	</div>
 	<br>
 <script>
-//some code in the javascript below was influenced by w3schools
-var tabsList = document.getElementsByClassName("tabs");
-	for (i = 0; i < tabsList.length; i++) {
-		tabsList[i].onclick = function(){
+	var tabsList = document.getElementsByClassName("tabs");
+		tabsList[0].onclick = function(){
 			this.classList.toggle("active");
 			var  expand = this.nextElementSibling;
 			if ( expand.style.display === "block") {
@@ -114,7 +112,16 @@ var tabsList = document.getElementsByClassName("tabs");
 				 expand.style.display = "block";
 			}
 		}
-	}
+		
+		tabsList[1].onclick = function(){
+			this.classList.toggle("active");
+			var  expand = this.nextElementSibling;
+			if ( expand.style.display === "block") {
+				 expand.style.display = "none";
+			} else {
+				 expand.style.display = "block";
+			}
+		}
 </script>
 <div id="map"></div>
 <script>
