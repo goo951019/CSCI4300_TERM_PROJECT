@@ -4,18 +4,13 @@
 <head>
     <style>
         #map {
-            height: 82%;
-			margin-left: .5cm;
-			margin-right: .5cm;
-			
+            height: 100%;	
         }
         html, body{
-            position:fixed;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
-			background-color:#66a3ff;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+	      background-color:#66a3ff;
         }
 		h1{
 			font-family: 'Raleway',sans-serif;
