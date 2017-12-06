@@ -5,8 +5,6 @@
     <style>
         #map {
             height: 100%;
-	    scrollwheel: false;
-	    zoomControl: true;
         }
         html, body{
               height: 100%;
